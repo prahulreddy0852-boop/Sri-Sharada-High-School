@@ -1,0 +1,26 @@
+{
+  "name": "sri",
+  "version": "1.0.0",
+  "description": "\"# Sri-Sharada-High-School\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server -p 5500 -c-1",
+    "build": "node -e \"const fs=require('fs'); fs.rmSync('dist',{recursive:true,force:true}); fs.mkdirSync('dist',{recursive:true}); fs.copyFileSync('index.html','dist/index.html'); fs.cpSync('assets','dist/assets',{recursive:true})\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prahulreddy0852-boop/Sri-Sharada-High-School.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/prahulreddy0852-boop/Sri-Sharada-High-School/issues"
+  },
+  "homepage": "https://github.com/prahulreddy0852-boop/Sri-Sharada-High-School#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
